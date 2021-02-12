@@ -6,7 +6,8 @@
 (click)="onServerCreated()">Add Server</button>
 <p>{{ allowNewServer }}</p>
 <p [innerText]="allowNewServer"></p>
-<p>{{ s1 }}</p>
+<!-- <p>{{ s1 }}</p> -->
+<p *ngIf="serverCreated">{{ s1 }}</p>
 <!-- assignment2 -->
 <label>User Name</label>
 <input type="text" class="form-control" [(ngModel)]="username">
