@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css']
 })
+
 export class ServersComponent implements OnInit {
   allowNewServer = false;
   s1 = 'No server was created!'
   s2 = 'Test Gokul';
+  server = ['Gokul','Krishna'];
   username = '';
   serverCreated:boolean = false;
   constructor() {
@@ -25,6 +27,7 @@ export class ServersComponent implements OnInit {
   
   onServerCreated(){
     this.serverCreated = true;
+    this.server.push(this.s2);
     this.s1 = 'Server created successfully...!! and the Name is '+this.s2;
   }
 
