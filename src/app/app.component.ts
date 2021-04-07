@@ -12,4 +12,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //name = 'Gokul Krishna';
+  serverElements = [{type:'server',name:'Test Server',content:'Just a content!'}];
 }
