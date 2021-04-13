@@ -30,7 +30,7 @@ export class CockpitComponent implements OnInit {
     // });
     console.log(serverName.value);
     // console.log(carname.value);
-
+    // this.servercontent.nativeElement.value = 'gokulkrishna';
     this.serverCreated.emit({ serverName: serverName.value, serverContent: this.servercontent.nativeElement.value });
   }
 
