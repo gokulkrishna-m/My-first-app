@@ -40,12 +40,16 @@
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+            <app-odd *ngFor="let oddNumber of oddNumbers;let i = index" [number]="oddNumber">{{i}}</app-odd>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <app-even *ngFor="let evenNumber of evenNumbers" [enumber]="evenNumber"></app-even>
+            <app-even *ngFor="let evenNumber of evenNumbers;let i = index" [enumber]="evenNumber"></app-even>
         </div>
     </div>
+    <br>
+    <div appBasicHighlight>Creating Basic Attribute Directive</div>
+    <br>
+    <div appBetterHighlight>Creating Better Attribute Directive</div>
 </div>
