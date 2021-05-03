@@ -28,6 +28,6 @@ export class BetterHighlightDirective implements OnInit {
   @HostListener('document:keypress', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     // this.keypressed = event.keyCode;
-    window.alert('Hello Gokul Krishna'+event.keyCode);
+    // window.alert('Hello Gokul Krishna'+event.keyCode);
   }
 }
