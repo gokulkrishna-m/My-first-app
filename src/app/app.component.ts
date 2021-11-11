@@ -16,6 +16,8 @@ export class AppComponent {
 
   currentItem = 'TV';
 
+  value = 10;
+
   oddNumbers: number[] = [];
   evenNumbers: number[] = [];
 
